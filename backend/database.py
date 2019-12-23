@@ -1,9 +1,9 @@
+import config
 import pandas as pd
 import numpy as np
 import time
 import hashlib
 import random
-import config
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, ForeignKey, Float, Boolean, Text, desc

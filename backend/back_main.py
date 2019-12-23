@@ -1,3 +1,8 @@
+import os
+import sys
+project_dirname = os.path.abspath(__file__ + '/../../')
+sys.path.append(project_dirname)
+
 import flask
 import json
 import config
