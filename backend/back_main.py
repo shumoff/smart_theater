@@ -103,7 +103,7 @@ def search():
 
 @app.route('/getRecommendations', methods=['POST'])
 @cross_origin()
-def get_recommendations(): # TODO: доделать - надо записывать в бд similarity и predictions
+def get_recommendations():  # TODO: доделать - надо записывать в бд similarity и predictions
     query = json.loads(request.data)
     type_ = query['type']
     if type_ == 'personal':
@@ -146,3 +146,9 @@ def get_recommendations(): # TODO: доделать - надо записыва�
 
     else:  # TODO: гибрид
         pass
+
+
+@app.route('/test', methods=['GET', 'POST'])
+@cross_origin()
+def test():
+    return 'Hooray!'
